@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizo  ntal"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="첫번째 숫자를 입력하세요"
+        android:id="@+id/et_number_1"
+
+        ></EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="두번째 숫자를 입력하세요"
+        android:id="@+id/et_number_2"
+        ></EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_plus"
+            android:text="+"
+            android:textSize="25dp"
+            android:layout_marginStart="20dp"></Button>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_minus"
+            android:text="-"
+            android:textSize="25dp"
+            android:layout_marginStart="20dp"></Button>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_multi"
+            android:text="x"
+            android:textSize="25dp"
+            android:layout_marginStart="20dp"></Button>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_divide"
+            android:text="/"
+            android:textSize="25dp"
+            android:layout_marginStart="20dp"></Button>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_rest"
+            android:text="%"
+            android:textSize="25dp"
+            android:layout_marginStart="20dp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="결과"
+            android:textSize="50dp"
+            android:textAlignment="center"
+            android:id="@+id/tv_result"
+            android:layout_marginTop="50dp"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="초기화"
+            android:textSize="20dp"
+            android:id="@+id/btn_init"
+            android:layout_marginTop="70dp"></Button>
+    </LinearLayout>
+</LinearLayout>
